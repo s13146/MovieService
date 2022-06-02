@@ -15,7 +15,6 @@ public class Movie {
     public boolean isAvailable;
 
 
-
     public Movie() {
     }
 

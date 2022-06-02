@@ -24,7 +24,22 @@ public class MovieService {
         return movieRepository.findAll();
     }
 
+    public Movie update(Movie movie) {
+        Optional<Movie> id = movieRepository.findById(movie.getId());
+        if (id.isEmpty()) {
+            throw new RuntimeException();
+        } else {
+            return movieRepository.save(movie);
+        }
+    }
 
+    public void deleteById(Long movieId) {
+        movieRepository.deleteById(movieId);
+    }
+
+    public void changeAvailable(Long movieId){
+        movieRepository.changeAvailable(movieId);
+    }
 
 
 
