@@ -12,7 +12,7 @@ import java.util.Optional;
 
 
 @Repository
-public interface MovieRepository extends JpaRepository<Movie, Long>{
+public interface MovieRepository extends JpaRepository<Movie, Long> {
 
     @Modifying
     @Query("update Movie m set m.isAvailable = 1 where m.id = ?1")

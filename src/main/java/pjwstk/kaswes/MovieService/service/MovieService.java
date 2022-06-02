@@ -37,18 +37,17 @@ public class MovieService {
         movieRepository.deleteById(movieId);
     }
 
-    public void changeAvailable(Long movieId){
+    public void changeAvailable(Long movieId) {
         movieRepository.changeAvailable(movieId);
     }
 
 
-
-   // public List<Movie> getAllMovies() {
-     //   Movie movie1 = new Movie(1L, "To", MovieCategory.HORROR);
+    // public List<Movie> getAllMovies() {
+    //   Movie movie1 = new Movie(1L, "To", MovieCategory.HORROR);
     //    return List.of(movie1);
     // }
 
-   // public void getMovieById(Long id) {
-      //  Movie movie2 = new Movie(2L, "Killer", MovieCategory.COMEDY);
-   // }
+    // public void getMovieById(Long id) {
+    //  Movie movie2 = new Movie(2L, "Killer", MovieCategory.COMEDY);
+    // }
 }
